@@ -1,42 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
+<?php include('_include/_header.php');
+include('_include/_navbar.php') ?>
 
-  <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet">
-      <!-- bootstrap -->
-      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-      <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 
-      <!-- Icons -->
-      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
-      <link rel="stylesheet" href="css/style.css">
-      <!-- favicon -->
-      <link rel="icon" href="favicon.ico" />
-      <title>Voyage sur Arrakis - Voyager</title>
-  </head>
-
-  <body>
-    <!--                Navbar Mobile / Desktop                     -->
-    <nav class="sticky-top navbar navbar-expand-lg navbar-dark ">
-      <a class="navbar-brand" href="index.html"><img id="logo" src="./images/rocket.png" alt="logo" height="auto" width="100px"/></a>
-      <button class="navbar-toggler nav-mobile" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"><i class="fas fa-bars" style="color:black; font-size: 1.5em;"></i></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div class="navbar-nav">
-          <a class="nav-item nav-link" href="index.html">Accueil <span class="sr-only">(current)</span></a>
-          <a class="nav-item nav-link" href="catalogue.html">Nos Destinations</a>
-          <a class="nav-item nav-link" href="about.html">L'Équipage</a>
-          <a class="nav-item nav-link" href="contact.html">Contact</a>
-        </div>
-      </div>
-    </nav>
-
-    <div class="banner">
+<div class="banner">
         <span class="banner-title">Arrakis</span>
         <span class="banner-baseline">La planète de l'épice</span>
         <div class="overlay"></div>
@@ -134,58 +100,5 @@
         </div>
     </main>
 
-    <!--      Footer -        -->
-    <footer>
-        <section id="footer">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-5">
-                        <ul class="list-unstyled list-inline social text-center">
-                            <li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-instagram"></i></a></li>
-                            <li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-pinterest"></i></a></li>
-                            <li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-twitter"></i></a></li>
-                            <li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-facebook"></i></a></li>
-                        </ul>
-                    </div>
-                    </hr>
-                </div>
 
-                <div class="row text-center text-xs-center text-sm-left text-md-left">
-                    <div class="col-xs-1 col-sm-9">
-                        <h5>Quick links</h5>
-                        <ul class="list-unstyled quick-links">
-                            <li><a href="index.html"><i class="fa fa-angle-double-right"></i>Accueil</a></li>
-                            <li><a href="catalogue.html"><i class="fa fa-angle-double-right"></i>Nos Destinations</a></li>
-                            <li><a href="about.html"><i class="fa fa-angle-double-right"></i>L'équipage</a></li>
-                            <li><a href="contact.html"><i class="fa fa-angle-double-right"></i>Contact</a></li>
-                        </ul>
-                    </div>
-
-                    <div class="col-xs-1 col-sm-3">
-                        <h5 class="quickLinks">Quick links</h5>
-                        <ul class="list-unstyled quick-links">
-                            <li><a href="#faq"><i class="fa fa-angle-double-right"></i>FAQ</a></li>
-                            <li><a href="#legal"><i class="fa fa-angle-double-right"></i>Mentions légales</a></li>
-                            <li><a href="#sales"><i class="fa fa-angle-double-right"></i>Conditions de vente</a></li>
-                            <li><a href="#confidentiality"><i class="fa fa-angle-double-right"></i>Confidentialité</a></li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white">
-                        <p><u><a href="index.html">Voyager International Corporation</a></u> est
-                            une marque de Voyages Intergalactiques SA, Lyon, France</p>
-                        <p class="h6">&copy Tous droits réservés.<a class="text-green ml-2"
-                                href="index.html" target="_blank">VI</a></p>
-                    </div>
-                    </hr>
-                </div>
-            </div>
-        </section>
-        <!-- ./Footer -->
-    </footer>
-
-  </body>
-
-</html>
+<?php include('_include/_footer.php') ?>

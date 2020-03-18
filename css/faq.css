@@ -42,6 +42,8 @@ This could be improved to automatically adapt  to any box content length, here's
     overflow: hidden;
     height: 150px;
     transition: height 0.3s; /** Look here https://developer.mozilla.org/en-US/docs/Web/CSS/transition **/
+    text-align: center;
+    padding-top: 30px;
 }
 
 .box-body.collapsed {

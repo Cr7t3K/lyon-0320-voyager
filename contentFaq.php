@@ -1,5 +1,5 @@
 <?php
-
+$nbr2 = 2;
 function faqtest()
 {
 

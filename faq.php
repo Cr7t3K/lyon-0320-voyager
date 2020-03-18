@@ -12,6 +12,7 @@ include('contentFaq.php');   ?>
                     <h1 class="title">Foire aux Questions</h1>
                     <h3 class="subtitle faq-sub">
                         Tout ce que vous devez savoir avant de partir vers les étoiles !
+                        <?php echo $nbr2; ?>
                     </h3>
                 </div>
             </div>

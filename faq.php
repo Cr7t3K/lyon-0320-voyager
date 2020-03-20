@@ -23,7 +23,7 @@ include('_include/_navbar.php'); ?>
 
 
 <!--         Loop content for FAQ           -->
-
+<link rel='stylesheet' href='https://unpkg.com/bulma@0.7.5/css/bulma.min.css'>
 <?php
 include('loopFaq.php');
 faqtest();

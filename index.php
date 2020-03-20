@@ -5,7 +5,7 @@ include('_include/_navbar.php') ?>
     <h1 class="banner-title">Déjeunez sur <span id="changeText">Mars</span></h1>
     <span class="banner-baseline">L'immensité de l'espace à votre portée !</span>
     <div class="overlay"></div>
-    <img src="images/home2.jpg" alt="mars expedition">
+    <img src="./images/home2.jpg" alt="mars expedition">
     <div class="container-btn container-btn-banner">
         <button class="btn" id="btn-banner" type="submit" data-toggle="modal" data-target="#exampleModal">Réserver
         </button>
@@ -21,7 +21,7 @@ include('_include/_navbar.php') ?>
     <div class="container">
         <h3>Nos Meilleurs voyages</h3>
         <div class="home-cards">
-            <a href="mars.php" class="">
+            <a href="../VoyagerPHP/mars.php" class="">
                 <div class="card bg-dark text-white hover-card">
                     <img src="./images/planetes/mars/mars.jpg" class="card-img" alt="Mars">
                     <div class="card-img-overlay">
@@ -30,7 +30,7 @@ include('_include/_navbar.php') ?>
                     </div>
                 </div>
             </a>
-            <a href="coruscant.php" class="">
+            <a href="../VoyagerPHP/coruscant.php" class="">
                 <div class="card bg-dark text-white hover-card">
                     <img src="./images/planetes/coruscant/Coruscant.jpg" class="card-img" alt="Coruscant">
                     <div class="card-img-overlay">
@@ -39,7 +39,7 @@ include('_include/_navbar.php') ?>
                     </div>
                 </div>
             </a>
-            <a href="arrakis.php" class="">
+            <a href="../VoyagerPHP/arrakis.php" class="">
                 <div class="card bg-dark text-white hover-card">
                     <img src="./images/planetes/arrakis/arrakis_planete.jpg" class="card-img" alt="Arrakis">
                     <div class="card-img-overlay">

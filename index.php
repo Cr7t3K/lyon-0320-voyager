@@ -1,5 +1,21 @@
 <?php include('_include/_header.php');
-include('_include/_navbar.php') ?>
+include('_include/_navbar.php');
+
+$cardHome = [
+    'mars' => ["mars.php", "./images/planetes/mars/mars.jpg", "Mars", "3M€/pers *"],
+    'coruscant' => ['coruscant.php', './images/planetes/coruscant/Coruscant.jpg', 'Coruscant', '20M€/pers *'],
+    'arakis' => ['arrakis.php', './images/planetes/arrakis/arrakis_planete.jpg', 'Arrakis', '25M€/pers *']
+];
+
+$trustCompany = [
+    'spacex' => ['./images/spacex.png'],
+    'nasa' => ['./images/nasa.png'],
+    'amazon' => ['./images/amazon.png']
+];
+?>
+
+
+<!--                    Home Page                       -->
 
 <div class="banner-large">
     <h1 class="banner-title">Déjeunez sur <span id="changeText">Mars</span></h1>
@@ -21,42 +37,38 @@ include('_include/_navbar.php') ?>
     <div class="container">
         <h3>Nos Meilleurs voyages</h3>
         <div class="home-cards">
-            <a href="../VoyagerPHP/mars.php" class="">
-                <div class="card bg-dark text-white hover-card">
-                    <img src="./images/planetes/mars/mars.jpg" class="card-img" alt="Mars">
-                    <div class="card-img-overlay">
-                        <h5 class="card-title-home">Visiter Mars</h5>
-                        <p class="card-text-home">3M€/pers *</p>
+            <?php
+            foreach ($cardHome as $planet => $content){
+
+                echo
+                "<a href=\"$content[0]\" class=\"\">
+                <div class=\"card bg-dark text-white hover-card\">
+                    <img src=\"$content[1]\" class=\"card-img\" alt=\"Mars\">
+                    <div class=\"card-img-overlay\">
+                        <h5 class=\"card-title-home\">Visiter $content[2]</h5>
+                        <p class=\"card-text-home\">$content[3]</p>
                     </div>
                 </div>
-            </a>
-            <a href="../VoyagerPHP/coruscant.php" class="">
-                <div class="card bg-dark text-white hover-card">
-                    <img src="./images/planetes/coruscant/Coruscant.jpg" class="card-img" alt="Coruscant">
-                    <div class="card-img-overlay">
-                        <h5 class="card-title-home">Visiter Coruscant</h5>
-                        <p class="card-text-home">20M€/pers *</p>
-                    </div>
-                </div>
-            </a>
-            <a href="../VoyagerPHP/arrakis.php" class="">
-                <div class="card bg-dark text-white hover-card">
-                    <img src="./images/planetes/arrakis/arrakis_planete.jpg" class="card-img" alt="Arrakis">
-                    <div class="card-img-overlay">
-                        <h5 class="card-title-home">Visiter Arrakis</h5>
-                        <p class="card-text-home">25M€/pers *</p>
-                    </div>
-                </div>
-            </a>
+             </a>";
+            };
+            ?>
         </div>
     </div>
 
+
+    <?php
+    echo "
     <h3>Ils nous font confiance</h3>
-    <div class="brands">
-        <img src="./images/spacex.png" alt="spacex">
-        <img src="./images/nasa.png" alt="nasa">
-        <img src="./images/amazon.png" alt="amazon">
-    </div>
+        <div class=\"brands\">";
+
+            foreach ($trustCompany as $company => $logo){
+
+            echo "<img src=\"$logo[0]\" alt=\"$company\">";
+            };
+        echo "
+        </div>";
+        ?>
+
 </main>
 
 

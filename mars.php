@@ -7,7 +7,7 @@ include('_include/_navbar.php') ?>
     <div class="overlay"></div>
     <img src="images/planetes/mars/mars.jpg" alt="nebula">
     <div class="container-btn container-btn-banner">
-        <button class="btn" id="btn-banner" type="submit">
+        <button class="btn" id="btn-banner" type="submit" data-toggle="modal" data-target="#exampleModal">
             <i class="fas fa-credit-card fa-credit-card-banner"></i>
             <p class="text-btn text-btn-banner ">Réserver</p>
         </button>

@@ -25,7 +25,17 @@
   transition: 0.5s;
 }
 
+.modal-footer{
+    justify-content: space-around;
+}
 
+.btn-modal{
+    margin: auto;
+}
+
+.row{
+    margin-bottom: 20px;
+}
 
 .card-img-top {
     object-fit: cover;

@@ -40,7 +40,7 @@ include('_include/_navbar.php') ?>
         </div>
         <div class="container-activites">
             <div class="card bg-dark text-white activites">
-                <img src="images/planetes/mars/marrs-large.jpg" class="card-img" alt="Mars">
+                <img src="images/planetes/mars/mars-large.jpg" class="card-img" alt="Mars">
                 <div class="card-img-overlay">
                     <h3 class="card-title-home">Les chantiers de terraformation</h3>
                 </div>

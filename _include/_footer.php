@@ -52,7 +52,7 @@
     </section>
     <!-- ./Footer -->
 </footer>
-<?php include('_modal.php') ?>
+
 </body>
 
 </html>

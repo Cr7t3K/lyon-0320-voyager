@@ -1,0 +1,69 @@
+
+.card.purchase {
+    align-self: center;
+    height: auto;
+    margin-top: 50px;
+    box-shadow: 0px 0px 10px 2px #8002d2;
+}
+
+@media screen and (min-width: 767px) {
+    .card.purchase img.card-img-top {
+        height: 500px;
+    }
+
+    .card.purchase div.card-body {
+        display: flex;
+        justify-content: initial;
+        align-items: initial;
+        flex-direction: column;
+    }
+
+    .card.purchase div.card-body p.card-text {
+        width: auto;
+        display: block;
+    }
+
+    .card-title-purchase {
+        width: auto;
+        margin-bottom: 50px;
+        font-size: 45px;
+    }
+
+    .card-text-purchase {
+        text-align: start;
+        margin: 0 150px;
+        font-weight: 400;
+        line-height: 200%;
+        font-size: 20px;
+    }
+    .info {
+        width: 300px;
+        height: auto;
+        margin: 50px 100px;
+        border-radius: 6px;
+        box-shadow: 0px 0px 0px 2px rgb(128, 2, 210);
+        font-weight: bold;
+    }
+    .container-info{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    div.info h4 {
+        background: #8002d2;
+        padding: 10px;
+        margin-bottom: 10px;
+    }
+    .check {
+        position: absolute;
+        right: 50px;
+        font-size: 60px;
+        top: 30px;
+        color: green;
+    }
+
+
+
+}

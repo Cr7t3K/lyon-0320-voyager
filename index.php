@@ -12,6 +12,9 @@ $trustCompany = [
     'nasa' => ['./images/nasa.png'],
     'amazon' => ['./images/amazon.png']
 ];
+
+
+
 ?>
 
 
@@ -72,4 +75,5 @@ $trustCompany = [
 </main>
 
 
-<?php include('_include/_footer.php') ?>
+<?php include('_include/_footer.php');
+;?>

@@ -52,7 +52,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $message = $_POST['message_text'];
 
     if (empty($error)){
-        header("Location: /succes.php?firstname=$firstName&lastname=$lastName&mail=$email&number=$numberRec&planet=$dest&date=$depart&text=$message&genre=$sex");
+        header("Location: /purchase.php?firstname=$firstName&lastname=$lastName&mail=$email&number=$numberRec&planet=$dest&date=$depart&text=$message&genre=$sex");
     }
 
 }

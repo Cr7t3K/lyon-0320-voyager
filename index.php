@@ -1,11 +1,7 @@
-<?php include('_include/_header.php');
-include('_include/_navbar.php');
-
-$cardHome = [
-    'mars' => ["mars.php", "./images/planetes/mars/mars.jpg", "Mars", "3M€/pers *"],
-    'coruscant' => ['coruscant.php', './images/planetes/coruscant/Coruscant.jpg', 'Coruscant', '20M€/pers *'],
-    'arakis' => ['arrakis.php', './images/planetes/arrakis/arrakis_planete.jpg', 'Arrakis', '25M€/pers *']
-];
+<?php
+require_once '_include/_header.php';
+require_once '_include/_navbar.php';
+require_once 'connec.php';
 
 $trustCompany = [
     'spacex' => ['./images/spacex.png'],
@@ -14,6 +10,19 @@ $trustCompany = [
 ];
 
 
+try {
+    $pdo = new PDO(DSN, USER, PASS);
+    $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+
+    $selectPlanet = "SELECT * FROM planet";
+    $query = $pdo->prepare($selectPlanet);
+    $query->execute();
+
+    $cardHome = $query->fetchAll(PDO::FETCH_OBJ);
+
+} catch (PDOException $e) {
+    echo 'Échec lors de la connexion : ' . $e->getMessage();
+}
 
 ?>
 
@@ -40,21 +49,17 @@ $trustCompany = [
     <div class="container">
         <h3>Nos Meilleurs voyages</h3>
         <div class="home-cards">
-            <?php
-            foreach ($cardHome as $planet => $content){
-
-                echo
-                "<a href=\"$content[0]\" class=\"\">
-                <div class=\"card bg-dark text-white hover-card\">
-                    <img src=\"$content[1]\" class=\"card-img\" alt=\"Mars\">
-                    <div class=\"card-img-overlay\">
-                        <h5 class=\"card-title-home\">Visiter $content[2]</h5>
-                        <p class=\"card-text-home\">$content[3]</p>
+        <?php foreach ($cardHome as $key): ?>
+            <a href="<?= $key->link ?>" class="">
+                <div class="card bg-dark text-white hover-card">
+                    <img src="<?= $key->img ?>" class="card-img" alt="Mars">
+                    <div class="card-img-overlay">
+                        <h5 class="card-title-home">Visiter <?= $key->title ?></h5>
+                        <p class="card-text-home"><?= $key->price ?> M€/pers*</p>
                     </div>
                 </div>
-             </a>";
-            };
-            ?>
+            </a>
+        <?php endforeach; ?>
         </div>
     </div>
 

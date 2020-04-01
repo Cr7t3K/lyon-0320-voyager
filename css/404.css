@@ -1,0 +1,31 @@
+
+.error404{
+    width: 80%;
+    height: 80vh;
+    background: #f1f1f1;
+    display: flex;
+    align-self: center;
+    align-items: center;
+    margin: 50px;
+    justify-content: center;
+
+}
+
+.container404{
+    text-align: center;
+}
+
+.container404 h1{
+    font-family: 'Exo 2';
+    font-size: 50vh;
+    margin: 0;
+    font-weight: 600;
+    font-style: italic;
+}
+
+.container404 p{
+    font-size: 30px;
+    margin: 0;
+    font-weight: bold;
+    transform: translateY(-50px);
+}

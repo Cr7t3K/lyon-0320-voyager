@@ -15,25 +15,25 @@
     height: 80%;
 }
 
-.card.catalog{
+.card.catalog {
     width: 90%;
 }
 
 
-.card.catalog.activ:hover{
-  box-shadow: 0px 10px 0px #8002d2;
-  transition: 0.5s;
+.card.catalog.activ:hover {
+    box-shadow: 0px 10px 0px #8002d2;
+    transition: 0.5s;
 }
 
-.modal-footer{
+.modal-footer {
     justify-content: space-around;
 }
 
-.btn-modal{
+.btn-modal {
     margin: auto;
 }
 
-.row{
+.row {
     margin-bottom: 20px;
 }
 
@@ -45,7 +45,7 @@
     border-top-left-radius: 10px;
 }
 
-.equipe::before{
+.equipe::before {
     background: #8002d200;
     height: 40px;
     width: 40px;
@@ -57,20 +57,21 @@
 
 }
 
-.equipe:hover::before{
-  transition: 0.5s;
-  background: #8002d2;
+.equipe:hover::before {
+    transition: 0.5s;
+    background: #8002d2;
 }
 
-.lien-card{
-  display: flex;
-  justify-content: center;
-  color: #000;
+.lien-card {
+    display: flex;
+    justify-content: center;
+    color: #000;
+    width: 100%;
 }
 
-.lien-card:hover{
-  text-decoration: none;
-  color: #000;
+.lien-card:hover {
+    text-decoration: none;
+    color: #000;
 }
 
 .card-body {
@@ -85,11 +86,11 @@
     transition: 0.5s;
 }
 
-.card-title{
+.card-title {
     margin: 0;
 }
 
-.container-btn{
+.container-btn {
     display: flex;
     align-items: center;
 }
@@ -103,44 +104,44 @@
     margin: 0;
 }
 
-.overlay.destruct{
-  background-color: #9a9a9ab0;
-  border-radius: 6px;
-  justify-content: center;
-  display: flex;
-  align-items: center;
-  font-size: 30px;
-  font-weight: bold;
-  color: white;
+.overlay.destruct {
+    background-color: #9a9a9ab0;
+    border-radius: 6px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
 }
 
-.price{
+.price {
     margin: 0;
     margin-right: 10px;
     font-weight: bold;
 }
 
-.card-text{
+.card-text {
     display: none;
 }
 
-.btn-primary{
+.btn-primary {
     background-color: royalblue;
 }
 
-.text-btn{
+.text-btn {
     display: none;
 }
 
 /* carte home */
-.card.bg-dark.text-white{
+.card.bg-dark.text-white {
     width: 350px;
     height: 250px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 6px;
 }
 
-.card.bg-dark.text-white.activites{
+.card.bg-dark.text-white.activites {
     width: 100%;
     height: 250px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -150,13 +151,14 @@
 .card.bg-dark.text-white .card-img {
     height: 100%;
 }
-.card-img{
+
+.card-img {
     object-fit: cover;
     height: 100%;
     border-radius: 10px;
 }
 
-.card-img-overlay{
+.card-img-overlay {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -168,15 +170,15 @@
     margin: 0 0 10px 0;
 }
 
-.card-img-top.resa{
+.card-img-top.resa {
     height: 60%;
     object-fit: cover;
 }
 
 
 @media screen and (min-width: 767px) {
-/* carte reservation */
-    body{
+    /* carte reservation */
+    body {
         width: 100%;
     }
 
@@ -186,30 +188,30 @@
         margin: 24px;
     }
 
-    .card .catalog{
+    .card .catalog {
         width: 90%;
     }
 
-    .card-title{
+    .card-title {
         width: 400px;
     }
 
-    .card-text{
+    .card-text {
         display: block;
         width: 300%;
         margin: 5px;
     }
 
-    .price{
+    .price {
         width: 50px;
     }
 
-    .text-btn{
+    .text-btn {
         display: block;
         margin: 0;
     }
 
-    .fa-credit-card{
+    .fa-credit-card {
         display: none;
     }
-  }
+}

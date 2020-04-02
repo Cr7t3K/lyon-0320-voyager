@@ -1,7 +1,7 @@
 
 .error404{
     width: 80%;
-    height: 80vh;
+    height: 75vh;
     background: #f1f1f1;
     display: flex;
     align-self: center;
@@ -28,4 +28,13 @@
     margin: 0;
     font-weight: bold;
     transform: translateY(-50px);
+}
+
+@media screen and (max-width: 1050px) {
+    .container404 h1{
+        font-size: 150px;
+    }
+    .container404 p{
+        transform: translateY(0px);
+    }
 }

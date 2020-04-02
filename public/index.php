@@ -14,7 +14,7 @@ $trustCompany = [
 $pdo = new PDO(DSN, USER, PASS);
 //$pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-$selectPlanet = "SELECT * FROM planet";
+$selectPlanet = "SELECT * FROM planet WHERE top=1";
 $query = $pdo->prepare($selectPlanet);
 $query->execute();
 

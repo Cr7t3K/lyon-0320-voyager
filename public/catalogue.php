@@ -6,7 +6,7 @@ include('_include/_navbar.php') ?>
     <span class="banner-title">Catalogue</span>
     <span class="banner-baseline">Dans le catalogue, retrouvez les tarifs et toutes les destinations !</span>
     <div class="overlay"></div>
-    <img src="./images/banner.jpg" alt="nebula">
+    <img src="images/banner.jpg" alt="nebula">
     <div class="container-btn container-btn-banner">
         <button class="btn" id="btn-banner" type="submit" data-toggle="modal" data-target="#exampleModal">Réserver
         </button>
@@ -19,7 +19,7 @@ include('_include/_navbar.php') ?>
     <a href="mars.php" class="lien-card">
         <div class="card catalog activ">
 
-            <img src="./images/planetes/mars/mars.jpg" class="card-img-top" alt="...">
+            <img src="images/planetes/mars/mars.jpg" class="card-img-top" alt="...">
 
             <div class="card-body">
                 <h5 class="card-title">Mars</h5>

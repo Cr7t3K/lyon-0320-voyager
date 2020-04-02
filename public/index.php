@@ -1,7 +1,7 @@
 <?php
 require_once '_include/_header.php';
 require_once '_include/_navbar.php';
-require_once 'connec.php';
+require_once '../connec.php';
 
 $trustCompany = [
     'spacex' => ['./images/spacex.png'],
@@ -10,20 +10,21 @@ $trustCompany = [
 ];
 
 
-try {
-    $pdo = new PDO(DSN, USER, PASS);
-    $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-    $selectPlanet = "SELECT * FROM planet";
-    $query = $pdo->prepare($selectPlanet);
-    $query->execute();
+$pdo = new PDO(DSN, USER, PASS);
+//$pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-    $cardHome = $query->fetchAll(PDO::FETCH_OBJ);
+$selectPlanet = "SELECT * FROM planet";
+$query = $pdo->prepare($selectPlanet);
+$query->execute();
 
-} catch (PDOException $e) {
-    echo 'Échec lors de la connexion : ' . $e->getMessage();
+$cardHome = $query->fetchAll(PDO::FETCH_OBJ);
+
+if (!$cardHome){
+    http_response_code(404);
+    include_once '404.html';
+    exit();
 }
-
 ?>
 
 
@@ -33,7 +34,7 @@ try {
     <h1 class="banner-title">Déjeunez sur <span id="changeText">Mars</span></h1>
     <span class="banner-baseline">L'immensité de l'espace à votre portée !</span>
     <div class="overlay"></div>
-    <img src="./images/home2.jpg" alt="mars expedition">
+    <img src="images/home2.jpg" alt="mars expedition">
     <div class="container-btn container-btn-banner">
         <button class="btn" id="btn-banner" type="submit" data-toggle="modal" data-target="#exampleModal">Réserver
         </button>

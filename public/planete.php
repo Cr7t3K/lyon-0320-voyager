@@ -5,7 +5,7 @@ include('_include/_navbar.php') ?>
     <span class="banner-title">Coruscant</span>
     <span class="banner-baseline">Joyaux des mondes du noyau</span>
     <div class="overlay"></div>
-    <img src="./images/planetes/coruscant/Coruscant.jpg" alt="nebula">
+    <img src="images/planetes/coruscant/Coruscant.jpg" alt="nebula">
     <div class="container-btn container-btn-banner">
         <button class="btn" id="btn-banner" type="submit">
             <i class="fas fa-credit-card fa-credit-card-banner"></i>

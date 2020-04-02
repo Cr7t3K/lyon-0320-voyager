@@ -6,7 +6,7 @@ include('_include/_navbar.php') ?>
     <span class="banner-title">Nous contacter</span>
     <span class="banner-baseline">Restons connectés !</span>
     <div class="overlay"></div>
-    <img src="./images/banner.jpg" alt="mars expedition">
+    <img src="images/banner.jpg" alt="mars expedition">
     <div class="container-btn container-btn-banner">
         <button class="btn" id="btn-banner" type="submit" data-toggle="modal" data-target="#exampleModal">Réserver
         </button>
@@ -36,7 +36,7 @@ include('_include/_navbar.php') ?>
     <!--      Adresse agence-        -->
     <div class="contactAddress">
         <address>
-            <img id="logo" src="./images/rocket.png" alt="logo" height="auto" width="100px"/>
+            <img id="logo" src="images/rocket.png" alt="logo" height="auto" width="100px"/>
             <span>Voyager</span><br>
             17, rue Delandine <br>
             69002 Lyon <br>

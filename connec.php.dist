@@ -1,0 +1,5 @@
+<?php
+
+define('DSN', 'mysql:host=your_host;dbname=your_db_name');
+define('USER', 'user_mysql');
+define('PASS', 'pass_mysql');

@@ -27,7 +27,6 @@ if (!$cardHome){
 }
 ?>
 
-
 <!--                    Home Page                       -->
 
 <div class="banner-large">
@@ -63,7 +62,6 @@ if (!$cardHome){
         <?php endforeach; ?>
         </div>
     </div>
-
 
     <?php
     echo "

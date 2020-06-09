@@ -24,3 +24,9 @@ define('PASS', 'pass_mysql');
 ```
 5. Lance un webserver PHP interne avec `php -S localhost:8000 -t public/`,
 6. Rends toi sur `localhost:8000` avec ton navigateur,
+
+
+
+## Vidéo
+
+[![IMAGE ALT TEXT](http://img.youtube.com/vi/PzGw8Z32kqE/0.jpg)](http://www.youtube.com/watch?v=PzGw8Z32kqE "Voyager")

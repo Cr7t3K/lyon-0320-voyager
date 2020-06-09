@@ -21,7 +21,6 @@ include('_include/_navbar.php'); ?>
 </section>
 
 
-
 <!--         Loop content for FAQ           -->
 <link rel='stylesheet' href='https://unpkg.com/bulma@0.7.5/css/bulma.min.css'>
 <?php

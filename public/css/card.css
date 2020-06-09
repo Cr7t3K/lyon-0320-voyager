@@ -17,6 +17,7 @@
 
 .card.catalog {
     width: 90%;
+    transition: 0.5s;
 }
 
 
@@ -139,6 +140,7 @@
     height: 250px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 6px;
+    transition: 0.5s;
 }
 
 .card.bg-dark.text-white.activites {

@@ -23,7 +23,7 @@ define('USER', 'user_mysql');
 define('PASS', 'pass_mysql');
 ```
 5. Lance un webserver PHP interne avec `php -S localhost:8000 -t public/`,
-6. Rends toi sur `localhost:8000` avec ton navigateur,
+6. Rends toi sur `localhost:8000` avec ton navigateur.
 
 
 

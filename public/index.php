@@ -15,20 +15,22 @@ var_dump(PASS);
 
 
 
-//$pdo = new PDO(DSN, USER, PASS);
-////$pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-//
-//$selectPlanet = "SELECT * FROM planet WHERE top=1";
-//$query = $pdo->prepare($selectPlanet);
-//$query->execute();
-//
-//$cardHome = $query->fetchAll(PDO::FETCH_OBJ);
-//var_dump($cardHome);
-//if (!$cardHome){
-//    http_response_code(404);
-//    include_once '404.html';
-//    exit();
-//}
+$pdo = new PDO(DSN, USER, PASS);
+//$pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+
+$selectPlanet = "SELECT * FROM planet WHERE top=1";
+$query = $pdo->prepare($selectPlanet);
+$query->execute();
+
+$cardHome = $query->fetchAll(PDO::FETCH_OBJ);
+
+var_dump($cardHome);
+
+if (!$cardHome){
+    http_response_code(404);
+    include_once '404.html';
+    exit();
+}
 ?>
 
 <!--                    Home Page                       -->

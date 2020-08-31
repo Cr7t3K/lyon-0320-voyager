@@ -1,5 +1,5 @@
 .DS_Store
 .idea/
 loopCardHome.php
-connec.php
+connec.local.php
 /vendor/

@@ -1,15 +1,11 @@
 {
-  "name": "vendor_name/VoyagerPHP",
-  "description": "description",
-  "minimum-stability": "stable",
-  "license": "proprietary",
-  "authors": [
-    {
-      "name": "cr7t3k",
-      "email": "email@example.com"
-    }
-  ],
-  "require": {
-    "php" : ">=7.2"
-  }
+    "name": "cr7t3k/voyager-php",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Cr7t3K",
+            "email": "cvr.contact.pro@gmail.com"
+        }
+    ],
+    "require": {}
 }

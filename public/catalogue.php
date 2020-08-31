@@ -1,6 +1,6 @@
 <?php require_once '_include/_header.php';
 require_once '_include/_navbar.php';
-require_once '../connec.php';
+require_once 'connec.php';
 
 
 $pdo = new PDO(DSN, USER, PASS);

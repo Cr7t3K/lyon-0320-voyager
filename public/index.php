@@ -9,10 +9,6 @@ $trustCompany = [
     'nasa' => ['./images/nasa.png'],
     'amazon' => ['./images/amazon.png']
 ];
-var_dump(DSN);
-var_dump(USER);
-var_dump(PASS);
-
 
 
 $pdo = new PDO(DSN, USER, PASS);
@@ -23,8 +19,6 @@ $query = $pdo->prepare($selectPlanet);
 $query->execute();
 
 $cardHome = $query->fetchAll(PDO::FETCH_OBJ);
-
-var_dump($cardHome);
 
 if (!$cardHome){
     http_response_code(404);

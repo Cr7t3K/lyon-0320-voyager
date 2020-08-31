@@ -7,5 +7,7 @@
             "email": "cvr.contact.pro@gmail.com"
         }
     ],
-    "require": {}
+    "require": {
+        "ext-pdo": "*"
+    }
 }

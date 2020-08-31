@@ -5,6 +5,7 @@ define('DSN', getenv('DSN'));
 define('USER', getenv('USER'));
 define('PASS', getenv('PASS'));
 
+
 $trustCompany = [
     'spacex' => ['./images/spacex.png'],
     'nasa' => ['./images/nasa.png'],
@@ -21,7 +22,8 @@ $query = $pdo->prepare($selectPlanet);
 $query->execute();
 
 $cardHome = $query->fetchAll(PDO::FETCH_OBJ);
-
+var_dump(DSN);
+var_dump($cardHome);
 //if (!$cardHome){
 //    http_response_code(404);
 //    include_once '404.html';

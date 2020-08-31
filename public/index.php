@@ -1,7 +1,9 @@
 <?php
 require_once '_include/_header.php';
 require_once '_include/_navbar.php';
-require_once './connec.php';
+define('DSN', getenv('DSN'));
+define('USER', getenv('USER'));
+define('PASS', getenv('PASS'));
 
 $trustCompany = [
     'spacex' => ['./images/spacex.png'],

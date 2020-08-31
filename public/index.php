@@ -2,7 +2,7 @@
 require_once '_include/_header.php';
 require_once '_include/_navbar.php';
 define('DSN', getenv('DSN'));
-define('USER', getenv('USER'));
+define('USER', getenv('USER_PDO'));
 define('PASS', getenv('PASS'));
 
 

@@ -20,11 +20,11 @@ $query->execute();
 
 $cardHome = $query->fetchAll(PDO::FETCH_OBJ);
 
-if (!$cardHome){
-    http_response_code(404);
-    include_once '404.html';
-    exit();
-}
+//if (!$cardHome){
+//    http_response_code(404);
+//    include_once '404.html';
+//    exit();
+//}
 ?>
 
 <!--                    Home Page                       -->
